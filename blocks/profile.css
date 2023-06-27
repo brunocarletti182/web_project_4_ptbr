@@ -1,0 +1,127 @@
+.profile {
+  display: flex;
+  justify-content:space-between;
+  margin-bottom: 46.25px;
+  align-items: center;
+}
+
+.profile__container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+}
+
+.profile__image {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+}
+
+.profile__name {
+  font-size: 42px;
+  font-weight: 500;
+  line-height: 48px;
+  margin: 0 0 14px 0;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+
+}
+
+.profile__profession {
+  font-size: 18px;
+  margin-left: 30px;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+}
+
+.profile__wrap-information-profession {
+  display: flex;
+  flex-direction: column;
+}
+
+.profile__wrap-name-edit {
+  display: flex;
+  align-items: center;
+  margin-left: 30px;
+
+}
+
+.profile__edit {
+  background-image: url(../assets/images/edit-normal.png);
+  min-width: 24px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 24px;
+  height: 24px;
+  margin: 0 16px 8px 16px;
+}
+
+.profile__edit:hover {
+  background-image: url(../assets/images/edit-hover.png);
+  cursor: pointer;
+}
+
+.profile__button-wrap {
+  display: flex;
+  align-items: center;
+}
+
+.profile__button {
+
+  background-image: url(../assets/images/add-button.png);
+  background-repeat: no-repeat, repeat;
+  background-size: cover;
+  min-width: 150px;
+  height: 50px;
+
+}
+
+.profile__button:hover {
+  background-image: url(../assets/images/add-button-hover.png);
+  cursor: pointer;
+}
+
+
+@media screen and (max-width: 680px) {
+
+  .profile {
+    display: flex;
+    flex-direction: column;
+    justify-content:space-between;
+    margin-bottom: 46.25px;
+    align-items: center;
+  }
+
+  .profile__container {
+    flex-direction: column;
+  }
+
+  .profile__image {
+      margin-bottom: 26px;
+  }
+
+  .profile__name {
+    text-align: center;
+    font-size: 22px;
+    font-weight: 500;
+    margin: 0 0 14px 0;
+    padding: 0;
+  }
+
+  .profile__profession {
+    text-align: center;
+    font-size: 14px;
+    margin-left: 0px;
+    text-align: center;
+    margin-bottom: 36px;
+  }
+
+  .profile__edit {
+    min-width: 18px;
+    width: 18px;
+    height: 18px;
+    margin: 0 16px 10px 10px;
+  }
+}

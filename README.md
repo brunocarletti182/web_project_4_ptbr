@@ -1,16 +1,25 @@
-# Projeto 5:  EUA Afora
+**Projeto**
 
-### Visão geral
+EUA Afora
 
-* Figma
-* Imagens
+**Descrição**
+Este é um projeto web chamado "EUA Afora" que exibe uma página com um perfil de usuário e uma seção de elementos. O objetivo do projeto é mostrar o exemplo de um perfil de usuário onde podem ser inseridos dados novos através do botão de edição ao lado do nome do perfil.
+Você também pode ver uma sessão abaixo onde fotos poderão ser inseridas com botões de curtir abaixo das fotos.
 
-**Figma**
+Recursos Utilizados
+O projeto utiliza os seguintes recursos:
 
-* [Link para o projeto no Figma](https://www.figma.com/file/XfB6BSINvliub43JgKza1e/WEB.-Sprint-4.-Around-The-U.S.-desktop-%2B-mobile-pt)
+HTML: O código HTML é responsável pela estrutura e organização da página.
+CSS: Há um arquivo CSS externo que contém estilos para estilizar os elementos e a aparência geral da página.
+Imagens: O projeto faz uso de várias imagens que são exibidas na seção de elementos, no perfil de usuário e no cabeçalho.
+JavaScript: Há um arquivo JavaScript externo que contém funcionalidades interativas, como abrir e fechar um popup de edição do perfil.
 
-**Imagens**
+**Imagens do projeto**
 
-A maneira como você fará isso no trabalho é exportando imagens diretamente do Figma — recomendamos fazer isso para praticar mais. Não se esqueça de otimizá-los [aqui](https://tinypng.com/), para que seu projeto carregue mais rápido.
+![Imagem de amostra do projeto](./assets/images/desktop-phone-sample.jpg)
 
-Divirta-se com JavaScript!
+**Github Page**
+
+Clique no link abaixo para visitar a página.
+
+https://brunocarletti182.github.io/web_project_4_ptbr/

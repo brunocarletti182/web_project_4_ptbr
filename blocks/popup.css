@@ -1,0 +1,141 @@
+.popup__form {
+  background-color: #fff;
+}
+
+.popup__overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 9999;
+  display: none;
+}
+
+.popup__overlay_active {
+  display: block;
+}
+
+
+.popup__container {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  z-index: 10000;
+  height: 330px;
+  width: 430px;
+  border-radius: 10px;
+  margin: auto;
+  padding: 35px;
+  display: none;
+}
+
+.popup__container_active {
+  display: block;
+}
+
+.popup__close {
+  position: absolute;
+  top: -42px;
+  right: -42px;
+  border: none;
+  cursor: pointer;
+  background-image: url(../assets/images/close-popup-normal.png);
+  width: 40.7px;
+  height: 40.7px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: transparent;
+}
+
+
+
+.popup__close:hover {
+  background-image: url(../assets/images/close-popup-hover.png);
+}
+
+.popup__title {
+  background-color: #ffffff;
+  color: #000000;
+  font-size: 24px;
+  font-weight: 900;
+  line-height: 29px;
+  text-align: left;
+  margin-bottom: 54px;
+}
+
+.popup__text {
+  width: 358px;
+  background-color: #ffffff;
+  color: #000000;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 17px;
+  text-align: left;
+  border: none;
+  padding-bottom: 13px;
+  border-bottom: 1px solid #000000;
+  margin-bottom: 30px;
+}
+
+.popup__text:focus, input:focus {
+  box-shadow: 0 0 0 0;
+  outline: 0;
+}
+
+.popup__save {
+  cursor: pointer;
+  background-image: url(../assets/images/submit-button.jpg);
+  width: 358px;
+  height: 50px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.popup__save:hover {
+  cursor: pointer;
+  background-image: url(../assets/images/submit-button-hover.jpg);
+}
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 680px) {
+
+
+  .popup__container {
+    height: 322px;
+    width: 282px;
+    padding: 22px;
+  }
+
+  .popup__close {
+    top: -35px;
+    right: -35px;
+    background-color: none;
+    width: 26px;
+  }
+
+  .popup__title {
+    font-size: 18px;
+    margin-bottom: 76px;
+  }
+
+  .popup__text {
+    width: 238px;
+  }
+
+  .popup__save {
+    height: 46px;
+    width: 238px;
+    border-radius: 2px;
+  }
+}

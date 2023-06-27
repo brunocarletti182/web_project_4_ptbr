@@ -1,0 +1,65 @@
+.element__container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(282px, 1fr));
+  gap: 17px;
+  margin-bottom: 68px;
+}
+
+.element__item {
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.element__image {
+  position: relative;
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.element__legend {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 21px;
+  background-color: rgb(255, 255, 255);
+  color: #000000;
+  font-size: 24px;
+  font-weight: 900;
+  line-height: 29px;
+  text-align: left;
+  margin-top: -10px;
+  position: relative;
+  z-index: 10;
+}
+
+.element__legend-text {
+  background-color: #fff;
+  color: #000000;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  max-width: 217px;
+}
+
+.element__like-icon {
+  background-image: url(../assets/images/heart-normal.png);
+  width: 21px;
+  height: 21px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #ffffff;
+}
+
+.element__like-icon:hover {
+  background-image: url(../assets/images/heart-hover.png);
+  cursor: pointer;
+}
+
+.element__like-icon:active {
+  background-image: url(../assets/images/heart-active.png);
+  cursor: pointer;
+}

@@ -1,0 +1,19 @@
+.header {
+  border-bottom: 1px solid #545454;
+  margin-bottom: 36.25px;
+}
+
+.header__logo {
+  max-width: 100%;
+  height: auto;
+  margin-top: 45px;
+  margin-bottom: 41px;
+}
+
+@media screen and (max-width: 680px) {
+
+  .header__logo {
+    width: 126px;
+    margin-left: 27px;
+  }
+}
