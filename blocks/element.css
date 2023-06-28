@@ -59,7 +59,8 @@
   cursor: pointer;
 }
 
-.element__like-icon:active {
+.element__like-icon.clicked {
   background-image: url(../assets/images/heart-active.png);
   cursor: pointer;
 }
+
