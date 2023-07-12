@@ -15,8 +15,8 @@
     <main class="main">
       <section class="profile">
         <div class="profile__container">
-          <img class="profile__image" src="./assets/images/profile-image.jpg" alt=" Imagem do profile">
-          <div class="profile__wrap-information-">
+          <img class="profile__image" src="./assets/images/profile-image.jpg" alt="Imagem do profile">
+          <div class="profile__wrap-information">
             <div class="profile__wrap-name-edit">
               <h1 class="profile__name">Jacques Cousteau</h1>
               <div class="profile__edit"></div>
@@ -28,50 +28,9 @@
       </section>
 
       <section class="element">
-          <ul class="element__container">
-            <li class="element__item">
-              <img class="element__image" src="./assets/images/yosemite-valey.jpg" alt="Imagem de yosemite valey">
-              <div class="element__legend">
-                <p class="element__legend-text">Vale de Yosemite</p>
-                <div class="element__like-icon"></div>
-              </div>
-          </li>
-            <li class="element__item">
-              <img class="element__image" src="./assets/images/louise-lake.png" alt="Imagem do lago louise">
-              <div class="element__legend">
-                <p class="element__legend-text">Lago Louise</p>
-                <div class="element__like-icon"></div>
-              </div>
-            </li>
-            <li class="element__item">
-              <img class="element__image" src="./assets/images/montains.png" alt="Imagem de montanhas">
-              <div class="element__legend">
-                <p class="element__legend-text">Montanhas Carelane</p>
-                <div class="element__like-icon"></div>
-              </div>
-            </li>
-            <li class="element__item">
-              <img class="element__image" src="./assets/images/latemar.png" alt="Imagem de latemar">
-              <div class="element__legend">
-                <p class="element__legend-text">Latemar</p>
-                <div class="element__like-icon"></div>
-              </div>
-            </li>
-            <li class="element__item">
-              <img class="element__image" src="./assets/images/vanoise.png" alt="Imagem de vanoise">
-              <div class="element__legend">
-                <p class="element__legend-text">Vanoise National park dfd fdsf </p>
-                <div class="element__like-icon"></div>
-              </div>
-            </li>
-            <li class="element__item">
-              <img class="element__image" src="./assets/images/di-braies-lake.png" alt="Imagem do lago de di braises">
-              <div class="element__legend">
-                <p class="element__legend-text">Lago di Braies</p>
-                <div class="element__like-icon"></div>
-              </div>
-            </li>
-          </ul>
+        <ul class="element__container">
+
+        </ul>
       </section>
 
       <div class="popup__container">
@@ -84,6 +43,24 @@
         </form>
       </div>
       <div class="popup__overlay"></div>
+
+      <div class="popup__container popup__container-new-item">
+        <form class="popup__form popup__form-new-item">
+          <h3 class="popup__title popup__title-new-item">Novo local</h3>
+          <input class="popup__text popup__text-new-item" maxlength="30" type="text" name="local" placeholder="Local">
+          <input class="popup__text popup__text-new-item" type="text" name="url" placeholder="URL da imagem">
+          <input class="popup__save-new-item" type="submit" value="">
+          <div class="popup__close popup__close-new-item">
+            <img class="popup__close-button" alt="Close">
+          </div>
+        </form>
+      </div>
+      <div class="popup__overlay"></div>
+
+      <div class="popup__enlarged-image">
+        <img class="popup__image" src="" alt="">
+        <div class="popup__close-button"></div>
+      </div>
 
     </main>
 
