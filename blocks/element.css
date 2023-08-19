@@ -9,6 +9,7 @@
   overflow: hidden;
   border-radius: 10px;
   position: relative;
+<<<<<<< Updated upstream
   max-width: 480px;
 }
 
@@ -21,6 +22,16 @@
   background-image: url('../assets/images/rubbish-normal.png');
   background-size: cover;
   background-color: rgb(212, 25, 25,0.0);
+=======
+}
+
+.element__delete-icon {
+  top: 10px;
+  right: 10px;
+  background-color: transparent;
+  position: absolute;
+  z-index: 999;
+>>>>>>> Stashed changes
   cursor: pointer;
 }
 

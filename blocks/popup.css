@@ -1,4 +1,4 @@
-.popup__form {
+.popup-profile__form {
   background-color: #fff;
 }
 
@@ -52,7 +52,6 @@
 }
 
 
-
 .popup__close:hover {
   background-image: url(../assets/images/close-popup-hover.png);
 }
@@ -100,6 +99,7 @@
   background-image: url(../assets/images/submit-button-hover.jpg);
 }
 
+<<<<<<< Updated upstream
 .popup__save-new-item {
   cursor: pointer;
   background-image: url(../assets/images/create-normal.png);
@@ -120,8 +120,9 @@
 
 
 
+=======
+>>>>>>> Stashed changes
 @media screen and (max-width: 680px) {
-
 
   .popup__container {
     height: 322px;

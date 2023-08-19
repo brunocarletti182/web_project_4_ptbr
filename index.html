@@ -27,23 +27,40 @@
         <div class="profile__button"></div>
       </section>
 
+
       <section class="element">
+<<<<<<< Updated upstream
         <ul class="element__container">
 
         </ul>
+=======
+          <ul class="element__container">
+            <template id="elementTemplate">
+              <li class="element__item">
+                <img class="element__delete-icon" src="./assets/images/trash.png">
+                <img class="element__image" src="" alt="Imagem de">
+                <div class="element__legend">
+                  <p class="element__legend-text"></p>
+                  <div class="element__like-icon"></div>
+                </div>
+              </li>
+            </template>
+          </ul>
+>>>>>>> Stashed changes
       </section>
 
-      <div class="popup__container">
-        <form class="popup__form">
+      <div class="popup-profile__container popup__container">
+        <form class="popup-profile__form">
           <h3 class="popup__title">Editar perfil</h3>
           <input class="popup__text popup__name" maxlength="30" type="text" name="name" value="Jacques Cousteau">
           <input class="popup__text popup__profession" maxlength="30" type="text" name="profession" value="Explorar">
-          <input class="popup__save" type="submit" value="">
-          <div class="popup__close"></div>
+          <input class="popup-profile__save popup__save" type="submit" value="">
+          <div class="popup-profile__close popup__close"></div>
         </form>
       </div>
       <div class="popup__overlay"></div>
 
+<<<<<<< Updated upstream
       <div class="popup__container popup__container-new-item">
         <form class="popup__form popup__form-new-item">
           <h3 class="popup__title popup__title-new-item">Novo local</h3>
@@ -60,12 +77,24 @@
       <div class="popup__enlarged-image">
         <img class="popup__image" src="" alt="">
         <div class="popup__close-button"></div>
+=======
+      <div class="popup-image__container popup__container">
+        <h3 class="popup__title">Novo local</h3>
+        <input class="popup__text popup-image__local" type="text" name="titulo" value="Título">
+        <input class="popup__text popup-image__url" type="text" name="url" value="URL da imagem">
+        <input class="popup-image__save popup__save" type="submit" value="">
+        <div class="popup-image__close popup__close"></div>
+      </div>
+
+      <div class="popup__open">
+        
+>>>>>>> Stashed changes
       </div>
 
     </main>
 
     <footer class="footer">
-      <p class="footer__text">© 2021 Around The U.S.</p>
+      <p class="footer__text">© 2023 Around The U.S.</p>
     </footer>
 
   </div>
