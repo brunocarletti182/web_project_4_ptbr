@@ -27,20 +27,19 @@
         <div class="profile__button"></div>
       </section>
 
-
       <section class="element">
-          <ul class="element__container">
-            <template id="elementTemplate">
-              <li class="element__item">
-                <img class="element__delete-icon" src="./assets/images/trash.png">
-                <img class="element__image" src="" alt="Imagem de">
-                <div class="element__legend">
-                  <p class="element__legend-text"></p>
-                  <div class="element__like-icon"></div>
-                </div>
-              </li>
-            </template>
-          </ul>
+        <ul class="element__container">
+          <template id="elementTemplate">
+            <li class="element__item">
+              <img class="element__delete-icon" src="./assets/images/rubbish-normal.png">
+              <img class="element__image" alt="">
+              <div class="element__legend">
+                <p class="element__legend-text"></p>
+                <div class="element__like-icon"></div>
+              </div>
+            </li>
+          </template>
+        </ul>
       </section>
 
       <div class="popup-profile__container popup__container">
@@ -56,14 +55,16 @@
 
       <div class="popup-image__container popup__container">
         <h3 class="popup__title">Novo local</h3>
-        <input class="popup__text popup-image__local" type="text" name="titulo" value="Título">
-        <input class="popup__text popup-image__url" type="text" name="url" value="URL da imagem">
-        <input class="popup-image__save popup__save" type="submit" value="">
+        <input class="popup__text popup-image__local" type="text" name="titulo" placeholder="Título">
+        <input class="popup__text popup-image__url" type="text" name="url" placeholder="URL da imagem">
+        <div class="popup-image__save popup__save"></div> <!-- Change to a div instead of submit input -->
         <div class="popup-image__close popup__close"></div>
       </div>
 
-      <div class="popup__open">
-
+      <div class="popup-image-viewer__container">
+        <img class="popup-image-viewer__image" src="" alt="Image">
+        <div class="popup-image-viewer__close popup__close"></div>
+        <div class="popup-image-viewer__legend"></div>
       </div>
 
     </main>
