@@ -36,7 +36,7 @@
   word-wrap: break-word;
 }
 
-.profile__wrap-information-profession {
+.profile__wrap-information {
   display: flex;
   flex-direction: column;
 }

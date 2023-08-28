@@ -63,7 +63,7 @@ elementData.forEach((data, index) => {
   const image = clonedTemplate.querySelector('.element__image');
   const legendText = clonedTemplate.querySelector('.element__legend-text');
   const likeIcon = clonedTemplate.querySelector('.element__like-icon');
-  const removeIcon = clonedTemplate.querySelector('.element__delete-icon'); 
+  const removeIcon = clonedTemplate.querySelector('.element__delete-icon');
 
   image.src = data.imageSrc;
   image.alt = data.legend;
