@@ -63,7 +63,7 @@ elementData.forEach((data, index) => {
   const image = clonedTemplate.querySelector('.element__image');
   const legendText = clonedTemplate.querySelector('.element__legend-text');
   const likeIcon = clonedTemplate.querySelector('.element__like-icon');
-  const removeIcon = clonedTemplate.querySelector('.element__delete-icon'); // Get the remove icon
+  const removeIcon = clonedTemplate.querySelector('.element__delete-icon'); 
 
   image.src = data.imageSrc;
   image.alt = data.legend;
@@ -73,23 +73,23 @@ elementData.forEach((data, index) => {
     likeIcon.classList.toggle('clicked');
   });
 
-  removeIcon.addEventListener('click', function() { // Add event listener to the remove icon
+  removeIcon.addEventListener('click', function() {
     elementContainer.removeChild(elementItem);
-    // You might also want to update your elementData array to reflect the removal
+
   });
 
   elementContainer.appendChild(clonedTemplate);
 });
 
-let popupImageSave = document.querySelector('.popup-image__save'); // Get the "Adicionar" button
+let popupImageSave = document.querySelector('.popup-image__save');
 
 function setupDeleteIcon(deleteIcon, elementItem, imageSrc, legend) {
   deleteIcon.addEventListener('click', function() {
     elementContainer.removeChild(elementItem);
-    // You might also want to update your elementData array to reflect the removal
+
   });
 
-  // Add a click event listener to the image
+
   imageSrc.addEventListener('click', function() {
     imageViewerImage.src = imageSrc.src;
     imageViewerImage.alt = legend;
@@ -106,13 +106,13 @@ popupImageSave.addEventListener('click', function() {
   let titleInput = document.querySelector('.popup-image__local').value;
   let imageUrlInput = document.querySelector('.popup-image__url').value;
 
-  // Create a new element using the template
+
   const clonedTemplate = elementTemplate.content.cloneNode(true);
   const elementItem = clonedTemplate.querySelector('.element__item');
   const image = clonedTemplate.querySelector('.element__image');
   const legendText = clonedTemplate.querySelector('.element__legend-text');
   const likeIcon = clonedTemplate.querySelector('.element__like-icon');
-  const removeIcon = clonedTemplate.querySelector('.element__delete-icon'); // Get the new remove icon
+  const removeIcon = clonedTemplate.querySelector('.element__delete-icon');
 
   image.src = imageUrlInput;
   image.alt = titleInput;
@@ -122,16 +122,16 @@ popupImageSave.addEventListener('click', function() {
     likeIcon.classList.toggle('clicked');
   });
 
-  setupDeleteIcon(removeIcon, elementItem, image, titleInput); // Call the setupDeleteIcon function
+  setupDeleteIcon(removeIcon, elementItem, image, titleInput);
 
-  // Insert the newly created element at the beginning of elementContainer
+
   elementContainer.insertBefore(clonedTemplate, elementContainer.firstChild);
 
-  // Close the popup
+
   overlay.classList.remove('popup__overlay_active');
   popupImageContainer.classList.remove('popup__container_active');
 
-  // Clear input fields
+
   document.querySelector('.popup-image__local').value = '';
   document.querySelector('.popup-image__url').value = '';
 });
@@ -143,7 +143,7 @@ const imageViewerClose = document.querySelector('.popup-image-viewer__close');
 
 document.querySelectorAll('.element__image').forEach((image, index) => {
   image.addEventListener('click', function() {
-    const imageData = elementData[index]; // Get the data for the clicked image
+    const imageData = elementData[index];
     imageViewerImage.src = imageData.imageSrc;
     imageViewerImage.alt = imageData.legend;
 
@@ -155,7 +155,7 @@ document.querySelectorAll('.element__image').forEach((image, index) => {
   });
 });
 
-// Add event listener to close the image viewer popup
+
 imageViewerClose.addEventListener('click', function() {
   imageViewerContainer.classList.remove('popup__container_active');
   overlay.classList.remove('popup__overlay_active');
