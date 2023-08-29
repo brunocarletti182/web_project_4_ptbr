@@ -151,7 +151,7 @@
 
 
 @media screen and (max-width: 680px) {
-  .popup__viewer {
+  .popup-viewer {
     width: 70%;
   }
 }
