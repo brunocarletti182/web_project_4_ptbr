@@ -1,6 +1,6 @@
 let popupProfileOpen = document.querySelector('.profile__edit');
-let popupProfileClose = document.querySelector('.popup-profile__close');
-let saveButton = document.querySelector('.popup-profile__save');
+let popupProfileClose = document.querySelector('.popup__close_profile');
+let saveButton = document.querySelector('.popup__save_profile');
 
 let popupProfileContainer = document.querySelector('.popup__container_profile');
 let popupProfileForm = document.querySelector('.popup__form_profile');
