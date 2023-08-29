@@ -94,7 +94,7 @@ function setupDeleteIcon(deleteIcon, elementItem, imageSrc, legend) {
     imageViewerImage.src = imageSrc.src;
     imageViewerImage.alt = legend;
 
-    const legendContainer = document.querySelector('.popup__viewer_legend');
+    const legendContainer = document.querySelector('.popup-viewer__legend');
     legendContainer.textContent = legend;
 
     imageViewerContainer.classList.add('popup__container_active');
@@ -137,9 +137,9 @@ popupImageSave.addEventListener('click', function() {
 });
 
 
-const imageViewerContainer = document.querySelector('.popup__viewer');
-const imageViewerImage = document.querySelector('.popup__viewer_image');
-const imageViewerClose = document.querySelector('.popup__viewer_close');
+const imageViewerContainer = document.querySelector('.popup-viewer');
+const imageViewerImage = document.querySelector('.popup-viewer__image');
+const imageViewerClose = document.querySelector('.popup-viewer__close');
 
 document.querySelectorAll('.element__image').forEach((image, index) => {
   image.addEventListener('click', function() {
@@ -147,7 +147,7 @@ document.querySelectorAll('.element__image').forEach((image, index) => {
     imageViewerImage.src = imageData.imageSrc;
     imageViewerImage.alt = imageData.legend;
 
-    const legendContainer = document.querySelector('.popup__viewer_legend');
+    const legendContainer = document.querySelector('.popup-viewer__legend');
     legendContainer.textContent = imageData.legend;
 
     imageViewerContainer.classList.add('popup__container_active');
