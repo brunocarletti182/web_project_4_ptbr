@@ -3,7 +3,7 @@ let popupProfileClose = document.querySelector('.popup-profile__close');
 let saveButton = document.querySelector('.popup-profile__save');
 
 let popupProfileContainer = document.querySelector('.popup__container_profile');
-let popupProfileForm = document.querySelector('.popup-profile__form');
+let popupProfileForm = document.querySelector('.popup__form_profile');
 let profileNameElement = document.querySelector('.profile__name');
 let profileProfessionElement = document.querySelector('.profile__profession');
 let likeIcons = document.querySelectorAll('.element__like-icon');
