@@ -2,7 +2,7 @@ let popupProfileOpen = document.querySelector('.profile__edit');
 let popupProfileClose = document.querySelector('.popup-profile__close');
 let saveButton = document.querySelector('.popup-profile__save');
 
-let popupProfileContainer = document.querySelector('.popup__profile_container');
+let popupProfileContainer = document.querySelector('.popup_profile_container');
 let popupProfileForm = document.querySelector('.popup-profile__form');
 let profileNameElement = document.querySelector('.profile__name');
 let profileProfessionElement = document.querySelector('.profile__profession');
