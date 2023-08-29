@@ -74,34 +74,4 @@
   cursor: pointer;
 }
 
-.popup-image-viewer__container {
-  display: none;
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  background-color: transparent;
-  z-index: 1001;
-  width: 45%;
-}
 
-.popup-image-viewer__image {
-  width: 100%;
-  max-height: 80vh;
-  border-radius: 20px;
-}
-
-.popup-image-viewer__close {
-  position: absolute;
-  top: 10px;
-  right: 10px;
-  width: 20px;
-  height: 20px;
-  background: url('./assets/images/close-icon.png') no-repeat center center;
-  background-size: cover;
-  cursor: pointer;
-}
-
-.popup-image-viewer__legend {
-  background-color: transparent;
-}
