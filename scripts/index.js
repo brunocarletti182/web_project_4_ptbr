@@ -33,7 +33,7 @@ popupProfileForm.addEventListener('submit', function(event) {
 
 let popupImageOpen = document.querySelector('.profile__button');
 let popupImageClose = document.querySelector('.popup-image__close');
-let popupImageContainer = document.querySelector('.popup-image__container');
+let popupImageContainer = document.querySelector('.popup__container_image');
 
 popupImageOpen.addEventListener('click', function() {
   overlay.classList.add('popup__overlay_active');
@@ -103,8 +103,8 @@ function setupDeleteIcon(deleteIcon, elementItem, imageSrc, legend) {
 }
 
 popupImageSave.addEventListener('click', function() {
-  let titleInput = document.querySelector('.popup-image__local').value;
-  let imageUrlInput = document.querySelector('.popup-image__url').value;
+  let titleInput = document.querySelector('.popup__local').value;
+  let imageUrlInput = document.querySelector('.popup__url').value;
 
 
   const clonedTemplate = elementTemplate.content.cloneNode(true);
@@ -132,8 +132,8 @@ popupImageSave.addEventListener('click', function() {
   popupImageContainer.classList.remove('popup__container_active');
 
 
-  document.querySelector('.popup-image__local').value = '';
-  document.querySelector('.popup-image__url').value = '';
+  document.querySelector('.popup__local').value = '';
+  document.querySelector('.popup__url').value = '';
 });
 
 
