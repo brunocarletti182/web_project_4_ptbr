@@ -42,31 +42,32 @@
         </ul>
       </section>
 
-      <div class="popup__container popup__profile_container">
-        <form class="popup popup-profile__form">
-          <h3 class="popup popup__title">Editar perfil</h3>
-          <input class="popup popup__text popup__name" maxlength="30" type="text" name="name" value="Jacques Cousteau">
-          <input class="popup popup__text popup__profession" maxlength="30" type="text" name="profession" value="Explorar">
-          <input class="popup popup-profile__save popup__save" type="submit" value="">
-          <div class="popup popup-profile__close popup__close"></div>
-        </form>
-      </div>
-      <div class="popup__overlay"></div>
+      <section class="popup">
+        <div class="popup-profile__container popup__container">
+          <form class="popup-profile__form">
+            <h3 class="popup__title">Editar perfil</h3>
+            <input class="popup__text popup__name" maxlength="30" type="text" name="name" value="Jacques Cousteau">
+            <input class="popup__text popup__profession" maxlength="30" type="text" name="profession" value="Explorar">
+            <input class="popup-profile__save popup__save" type="submit" value="">
+            <div class="popup-profile__close popup__close"></div>
+          </form>
+        </div>
+        <div class="popup__overlay"></div>
 
-      <div class="popup-image__container popup__container">
-        <h3 class="popup__title">Novo local</h3>
-        <input class="popup__text popup-image__local" type="text" name="titulo" placeholder="Título">
-        <input class="popup__text popup-image__url" type="text" name="url" placeholder="URL da imagem">
-        <div class="popup-image__save popup__save"></div>
-        <div class="popup-image__close popup__close"></div>
-      </div>
+        <div class="popup-image__container popup__container">
+          <h3 class="popup__title">Novo local</h3>
+          <input class="popup__text popup-image__local" type="text" name="titulo" placeholder="Título">
+          <input class="popup__text popup-image__url" type="text" name="url" placeholder="URL da imagem">
+          <div class="popup-image__save popup__save"></div>
+          <div class="popup-image__close popup__close"></div>
+        </div>
 
-      <div class="popup-image-viewer__container">
-        <img class="popup-image-viewer__image" src="./assets/images/" alt="Image">
-        <div class="popup-image-viewer__close popup__close"></div>
-        <div class="popup-image-viewer__legend"></div>
-      </div>
-
+        <div class="popup-image-viewer__container">
+          <img class="popup-image-viewer__image" src="./assets/images/" alt="Image">
+          <div class="popup-image-viewer__close popup__close"></div>
+          <div class="popup-image-viewer__legend"></div>
+        </div>
+      </section>
     </main>
 
     <footer class="footer">
