@@ -102,10 +102,6 @@
     justify-content:space-between;
     margin-bottom: 46.25px;
     align-items: center;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-    overflow: hidden;
-
   }
 
   .profile__container {
@@ -123,9 +119,6 @@
     font-weight: 500;
     margin: auto;
     padding: auto;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-    overflow: hidden;
   }
 
   .profile__profession {
@@ -133,9 +126,6 @@
     font-size: 14px;
     margin-left: 0px;
     margin-bottom: 36px;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-    overflow: hidden;
   }
 
   .profile__edit {
