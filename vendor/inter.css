@@ -1,0 +1,17 @@
+@font-face {
+  src: url(../inter/Inter-VariableFont_slnt\,wght.ttf);
+  font-family: "inter";
+  font-weight: 900;
+}
+
+@font-face {
+  src: url(../inter/Inter-VariableFont_slnt\,wght.ttf);
+  font-family: "inter";
+  font-weight: 500;
+}
+
+@font-face {
+  src: url(../inter/Inter-VariableFont_slnt\,wght.ttf);
+  font-family: "inter";
+  font-weight: 400;
+}

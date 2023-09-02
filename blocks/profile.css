@@ -9,8 +9,9 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  overflow-wrap: break-word;
-  word-wrap: break-word;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
 }
 
 .profile__image {
@@ -24,28 +25,34 @@
   font-weight: 500;
   line-height: 48px;
   margin: 0 0 14px 0;
-  overflow-wrap: break-word;
-  word-wrap: break-word;
-
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
 }
 
 .profile__profession {
   font-size: 18px;
   margin-left: 30px;
-  overflow-wrap: break-word;
-  word-wrap: break-word;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
 }
 
 .profile__wrap-information {
   display: flex;
   flex-direction: column;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
 }
 
 .profile__wrap-name-edit {
   display: flex;
   align-items: center;
   margin-left: 30px;
-
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
 }
 
 .profile__edit {
@@ -56,6 +63,9 @@
   width: 24px;
   height: 24px;
   margin: 0 16px 8px 16px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
 }
 
 .profile__edit:hover {
@@ -92,10 +102,15 @@
     justify-content:space-between;
     margin-bottom: 46.25px;
     align-items: center;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+
   }
 
   .profile__container {
     flex-direction: column;
+
   }
 
   .profile__image {
@@ -106,8 +121,11 @@
     text-align: center;
     font-size: 22px;
     font-weight: 500;
-    margin: 0 0 14px 0;
-    padding: 0;
+    margin: auto;
+    padding: auto;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
   }
 
   .profile__profession {
@@ -115,6 +133,9 @@
     font-size: 14px;
     margin-left: 0px;
     margin-bottom: 36px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
   }
 
   .profile__edit {

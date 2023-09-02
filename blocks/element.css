@@ -44,6 +44,7 @@
   margin-top: -10px;
   position: relative;
   z-index: 10;
+
 }
 
 .element__legend-text {
@@ -52,7 +53,7 @@
   text-overflow: ellipsis;
   white-space: nowrap;
   overflow: hidden;
-  max-width: 217px;
+  width: 90%;
 }
 
 .element__like-icon {
@@ -73,5 +74,7 @@
   background-image: url(../assets/images/heart-active.png);
   cursor: pointer;
 }
+
+
 
 

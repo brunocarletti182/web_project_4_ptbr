@@ -64,6 +64,16 @@
   display: none;
 }
 
+.popup__name {
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  text-overflow:ellipsis;
+}
+
+.popup__profession {
+
+}
+
 .popup__container_active {
   display: block;
 }

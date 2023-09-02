@@ -1,14 +1,14 @@
-let popupProfileOpen = document.querySelector('.profile__edit');
-let popupProfileClose = document.querySelector('.popup__close_profile');
-let saveButton = document.querySelector('.popup__save_profile');
+const popupProfileOpen = document.querySelector('.profile__edit');
+const popupProfileClose = document.querySelector('.popup__close_profile');
+const saveButton = document.querySelector('.popup__save_profile');
 
-let popupProfileContainer = document.querySelector('.popup__container_profile');
-let popupProfileForm = document.querySelector('.popup__form_profile');
-let profileNameElement = document.querySelector('.profile__name');
-let profileProfessionElement = document.querySelector('.profile__profession');
-let likeIcons = document.querySelectorAll('.element__like-icon');
+const popupProfileContainer = document.querySelector('.popup__container_profile');
+const popupProfileForm = document.querySelector('.popup__form_profile');
+const profileNameElement = document.querySelector('.profile__name');
+const profileProfessionElement = document.querySelector('.profile__profession');
+const likeIcons = document.querySelectorAll('.element__like-icon');
 
-let overlay = document.querySelector('.popup__overlay');
+const overlay = document.querySelector('.popup__overlay');
 
 popupProfileOpen.addEventListener('click', function() {
   overlay.classList.add('popup__overlay_active');
@@ -24,16 +24,16 @@ popupProfileForm.addEventListener('submit', function(event) {
   event.preventDefault();
   overlay.classList.remove('popup__overlay_active');
   popupProfileContainer.classList.remove('popup__container_active');
-  let nameInput = document.querySelector('.popup__name').value;
-  let profInput = document.querySelector('.popup__profession').value;
+  const nameInput = document.querySelector('.popup__name').value;
+  const profInput = document.querySelector('.popup__profession').value;
   profileNameElement.textContent = nameInput;
   profileProfessionElement.textContent = profInput;
 
 });
 
-let popupImageOpen = document.querySelector('.profile__button');
-let popupImageClose = document.querySelector('.popup__close_image');
-let popupImageContainer = document.querySelector('.popup__container_image');
+const popupImageOpen = document.querySelector('.profile__button');
+const popupImageClose = document.querySelector('.popup__close_image');
+const popupImageContainer = document.querySelector('.popup__container_image');
 
 popupImageOpen.addEventListener('click', function() {
   overlay.classList.add('popup__overlay_active');
@@ -46,7 +46,7 @@ popupImageClose.addEventListener('click', function() {
 });
 
 const elementData = [
-  { imageSrc: './assets/images/yosemite-valey.png', legend: 'Vale de Yosemite' },
+  { imageSrc: './assets/images/yosemite-valey.png', legend: 'Montanhas do Vale de Yosemite' },
   { imageSrc: './assets/images/louise-lake.png', legend: 'Lago Louise' },
   { imageSrc: './assets/images/montains.png' , legend: 'Montanhas Carelane'},
   { imageSrc: './assets/images/latemar.png' , legend: 'Lago Latemar'},
@@ -65,8 +65,12 @@ elementData.forEach((data, index) => {
   const likeIcon = clonedTemplate.querySelector('.element__like-icon');
   const removeIcon = clonedTemplate.querySelector('.element__delete-icon');
 
-  image.src = data.imageSrc;
-  image.alt = data.legend;
+  function setImageSource(imageElement, imageSrc, imageAlt) {
+    imageElement.src = imageSrc;
+    imageElement.alt = imageAlt;
+  }
+
+  setImageSource(image, data.imageSrc, data.legend);
   legendText.textContent = data.legend;
 
   likeIcon.addEventListener('click', function() {
@@ -81,7 +85,7 @@ elementData.forEach((data, index) => {
   elementContainer.appendChild(clonedTemplate);
 });
 
-let popupImageSave = document.querySelector('.popup__save_image');
+const popupImageSave = document.querySelector('.popup__save_image');
 
 function setupDeleteIcon(deleteIcon, elementItem, imageSrc, legend) {
   deleteIcon.addEventListener('click', function() {
@@ -103,8 +107,8 @@ function setupDeleteIcon(deleteIcon, elementItem, imageSrc, legend) {
 }
 
 popupImageSave.addEventListener('click', function() {
-  let titleInput = document.querySelector('.popup__local').value;
-  let imageUrlInput = document.querySelector('.popup__url').value;
+  const titleInput = document.querySelector('.popup__local').value;
+  const imageUrlInput = document.querySelector('.popup__url').value;
 
 
   const clonedTemplate = elementTemplate.content.cloneNode(true);
@@ -114,9 +118,13 @@ popupImageSave.addEventListener('click', function() {
   const likeIcon = clonedTemplate.querySelector('.element__like-icon');
   const removeIcon = clonedTemplate.querySelector('.element__delete-icon');
 
-  image.src = imageUrlInput;
-  image.alt = titleInput;
-  legendText.textContent = titleInput;
+  function setImageAttributes(imageElement, imageSrc, imageAlt, legendElement, legendText) {
+    imageElement.src = imageSrc;
+    imageElement.alt = imageAlt;
+    legendElement.textContent = legendText;
+  }
+
+  setImageAttributes(image, imageUrlInput, titleInput, legendText, titleInput);
 
   likeIcon.addEventListener('click', function() {
     likeIcon.classList.toggle('clicked');
