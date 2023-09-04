@@ -1,8 +1,9 @@
 .profile {
   display: flex;
-  justify-content:space-between;
+  justify-content: space-between;
   margin-bottom: 46.25px;
   align-items: center;
+
 }
 
 .profile__container {
@@ -50,9 +51,8 @@
   display: flex;
   align-items: center;
   margin-left: 30px;
-  text-overflow: ellipsis;
-  white-space: nowrap;
   overflow: hidden;
+
 }
 
 .profile__edit {
@@ -63,9 +63,7 @@
   width: 24px;
   height: 24px;
   margin: 0 16px 8px 16px;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  overflow: hidden;
+
 }
 
 .profile__edit:hover {
@@ -79,13 +77,11 @@
 }
 
 .profile__button {
-
   background-image: url(../assets/images/add-button.png);
   background-repeat: no-repeat, repeat;
   background-size: cover;
   min-width: 150px;
   height: 50px;
-
 }
 
 .profile__button:hover {
@@ -99,14 +95,14 @@
   .profile {
     display: flex;
     flex-direction: column;
-    justify-content:space-between;
     margin-bottom: 46.25px;
     align-items: center;
+    justify-content: space-between;
+
   }
 
   .profile__container {
     flex-direction: column;
-
   }
 
   .profile__image {
@@ -117,15 +113,20 @@
     text-align: center;
     font-size: 22px;
     font-weight: 500;
-    margin: auto;
-    padding: auto;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    width: 450px;
   }
 
   .profile__profession {
     text-align: center;
     font-size: 14px;
-    margin-left: 0px;
     margin-bottom: 36px;
+    text-overflow: ellipsis;
+    white-space:nowrap;
+    overflow: hidden;
+    width: 450px;
   }
 
   .profile__edit {
@@ -133,5 +134,57 @@
     width: 18px;
     height: 18px;
     margin: 0 16px 10px 10px;
+
   }
+
 }
+
+@media screen and (max-width: 550px) {
+
+  .profile__name {
+    text-align: center;
+    font-size: 22px;
+    font-weight: 500;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    width: 300px;
+  }
+
+  .profile__profession {
+    text-align: center;
+    font-size: 14px;
+    margin-bottom: 36px;
+    text-overflow: ellipsis;
+    white-space:nowrap;
+    overflow: hidden;
+    width: 300px;
+  }
+
+}
+
+@media screen and (max-width: 375px) {
+
+  .profile__name {
+    text-align: center;
+    font-size: 22px;
+    font-weight: 500;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    width: 240px;
+  }
+
+  .profile__profession {
+    text-align: center;
+    font-size: 14px;
+    margin-bottom: 36px;
+    text-overflow: ellipsis;
+    white-space:nowrap;
+    overflow: hidden;
+    width: 240px;
+  }
+
+}
+
+

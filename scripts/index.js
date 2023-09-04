@@ -10,6 +10,8 @@ const likeIcons = document.querySelectorAll('.element__like-icon');
 
 const overlay = document.querySelector('.popup__overlay');
 
+
+
 popupProfileOpen.addEventListener('click', function() {
   overlay.classList.add('popup__overlay_active');
   popupProfileContainer.classList.add('popup__container_active');

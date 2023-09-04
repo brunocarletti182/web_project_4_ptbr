@@ -64,18 +64,9 @@
   display: none;
 }
 
-.popup__name {
-  overflow-wrap: break-word;
-  word-wrap: break-word;
-  text-overflow:ellipsis;
-}
-
-.popup__profession {
-
-}
-
 .popup__container_active {
   display: block;
+
 }
 
 .popup__close {
@@ -157,7 +148,6 @@
   background-repeat: no-repeat;
   background-position: center;
 }
-
 
 
 @media screen and (max-width: 680px) {
