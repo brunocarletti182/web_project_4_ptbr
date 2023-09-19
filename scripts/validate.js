@@ -55,11 +55,11 @@ function isProfileFormValid() {
   if (nameValue.length < 2 || nameValue.length > 40) {
     isNameValid = false;
     displayErrorMessage(profileForm.nameInput, profileForm.nameError, 'O nome deve ter entre 2 e 40 caracteres.');
-    saveButton.style.backgroundImage = 'url("../assets/images/submit-invalid.jpg")';
+    saveButton.style.backgroundImage = 'url("./assets/images/submit-invalid.jpg")';
     
   } else {
     clearErrorMessage(profileForm.nameInput, profileForm.nameError);
-    saveButton.style.backgroundImage = 'url("../assets/images/submit-button.jpg")';
+    saveButton.style.backgroundImage = 'url("./assets/images/submit-button.jpg")';
   }
 
   if (professionValue.length < 2 || professionValue.length > 200) {
@@ -109,10 +109,10 @@ function isImageFormValid() {
   const isFormValid = isLocalValid && isUrlValid && localValue.length > 0 && urlValue.length > 0;
 
   if (isFormValid) {
-    imageSaveButton.style.backgroundImage = 'url("../assets/images/submit-button.jpg")';
+    imageSaveButton.style.backgroundImage = 'url("./assets/images/submit-button.jpg")';
     imageForm.saveButton.removeAttribute('disabled');
   } else {
-    imageSaveButton.style.backgroundImage = 'url("../assets/images/submit-invalid.jpg")';
+    imageSaveButton.style.backgroundImage = 'url("./assets/images/submit-invalid.jpg")';
     imageForm.saveButton.setAttribute('disabled', 'true');
   }
 
