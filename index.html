@@ -46,20 +46,26 @@
         <div class="popup__container popup__container_profile">
           <form class="popup__form popup__form_profile">
             <h3 class="popup__title">Editar perfil</h3>
-            <input class="popup__text popup__name" type="text" name="name" value="Jacques Cousteau">
-            <input class="popup__text popup__profession" type="text" name="profession" value="Explorar">
-            <input class="popup__save popup__save_profile" type="submit" value="">
+            <input class="popup__text popup__name" type="text" name="name" placeholder="Jacques Cousteau" value="Jacques Cousteau">
+            <p class="popup__error" id="name-error"></p>
+            <input class="popup__text popup__profession" type="text" name="profession" placeholder="Explorar" value="Explorar">
+            <p class="popup__error" id="profession-error"></p>
+            <input class="popup__save popup__save_profile" type="submit" value="" disabled>
             <div class="popup__close popup__close_profile"></div>
           </form>
         </div>
         <div class="popup__overlay"></div>
 
         <div class=" popup__container popup__container_image">
-          <h3 class="popup__title">Novo local</h3>
-          <input class="popup__text popup__local" type="text" name="titulo" placeholder="Título">
-          <input class="popup__text popup__url" type="text" name="url" placeholder="URL da imagem">
-          <div class="popup__save popup__save_image"></div>
-          <div class="popup__close popup__close_image"></div>
+          <form class="popup__form_image">
+            <h3 class="popup__title">Novo local</h3>
+            <input class="popup__text popup__local" type="text" name="titulo" placeholder="Título" value="Título">
+            <p class="popup__error" id="local-error"></p>
+            <input class="popup__text popup__url" type="text" name="url" placeholder="URL da imagem" value="URL da imagem">
+            <p class="popup__error" id="url-error"></p>
+            <input class="popup__save popup__save_image" type="submit" value="" disabled>
+            <div class="popup__close popup__close_image"></div>
+          </form>
         </div>
 
         <div class="popup-viewer">
@@ -76,5 +82,6 @@
 
   </div>
   <script src="./scripts/index.js"></script>
+  <script src="./scripts/validate.js"></script>
 </body>
 </html>
