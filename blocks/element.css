@@ -57,7 +57,7 @@
 }
 
 .element__like-icon {
-  background-image: url(../assets/images/heart-normal.png);
+  background-image: url(../images/heart-normal.png);
   width: 21px;
   height: 21px;
   background-repeat: no-repeat;
@@ -66,12 +66,12 @@
 }
 
 .element__like-icon:hover {
-  background-image: url(../assets/images/heart-hover.png);
+  background-image: url(../images/heart-hover.png);
   cursor: pointer;
 }
 
 .element__like-icon.clicked {
-  background-image: url(../assets/images/heart-active.png);
+  background-image: url(../images/heart-active.png);
   cursor: pointer;
 }
 

@@ -82,12 +82,12 @@ popupImageClose.addEventListener('click', function() {
 
 // data for elements images
 const elementData = [
-  { imageSrc: './assets/images/yosemite-valey.png', legend: 'Montanhas do Vale de Yosemite' },
-  { imageSrc: './assets/images/louise-lake.png', legend: 'Lago Louise' },
-  { imageSrc: './assets/images/montains.png' , legend: 'Montanhas Carelane'},
-  { imageSrc: './assets/images/latemar.png' , legend: 'Lago Latemar'},
-  { imageSrc: './assets/images/vanoise.png' , legend: 'Vanoise National'},
-  { imageSrc: './assets/images/di-braies-lake.png' , legend: 'Lago Di Braies'},
+  { imageSrc: './images/yosemite-valey.png', legend: 'Montanhas do Vale de Yosemite' },
+  { imageSrc: './images/louise-lake.png', legend: 'Lago Louise' },
+  { imageSrc: './images/montains.png' , legend: 'Montanhas Carelane'},
+  { imageSrc: './images/latemar.png' , legend: 'Lago Latemar'},
+  { imageSrc: './images/vanoise.png' , legend: 'Vanoise National'},
+  { imageSrc: './images/di-braies-lake.png' , legend: 'Lago Di Braies'},
 
 ];
 

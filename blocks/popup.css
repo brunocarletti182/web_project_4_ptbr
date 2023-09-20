@@ -30,7 +30,7 @@
   right: 10px;
   width: 20px;
   height: 20px;
-  background: url('./assets/images/close-icon.png') no-repeat center center;
+  background: url('./images/close-icon.png') no-repeat center center;
   background-size: cover;
   cursor: pointer;
 }
@@ -86,7 +86,7 @@
   right: -42px;
   border: none;
   cursor: pointer;
-  background-image: url(../assets/images/close-popup-normal.png);
+  background-image: url(../images/close-popup-normal.png);
   width: 40.7px;
   height: 40.7px;
   background-repeat: no-repeat;
@@ -96,7 +96,7 @@
 
 
 .popup__close:hover {
-  background-image: url(../assets/images/close-popup-hover.png);
+  background-image: url(../images/close-popup-hover.png);
 }
 
 .popup__title {
@@ -141,7 +141,7 @@
 
 .popup__save {
   cursor: pointer;
-  background-image: url(../assets/images/submit-button.jpg);
+  background-image: url(../images/submit-button.jpg);
   width: 358px;
   height: 50px;
   background-repeat: no-repeat;
@@ -150,12 +150,12 @@
 
 .popup__save:hover {
   cursor: pointer;
-  background-image: url(../assets/images/submit-button-hover.jpg);
+  background-image: url(../images/submit-button-hover.jpg);
 }
 
 .popup__save-new-item {
   cursor: pointer;
-  background-image: url(../assets/images/create-normal.png);
+  background-image: url(../images/create-normal.png);
   width: 358px;
   height: 50px;
   background-repeat: no-repeat;
@@ -164,7 +164,7 @@
 
 .popup__save-new-item:hover {
   cursor: pointer;
-  background-image: url(../assets/images/create-hover.png);
+  background-image: url(../images/create-hover.png);
   width: 358px;
   height: 50px;
   background-repeat: no-repeat;
