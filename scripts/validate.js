@@ -22,7 +22,7 @@ const profileForm = {
 
 // Object to represent image form validation
 const imageForm = {
-  form: document.querySelector('.popup__form_image'),
+  form: document.querySelector('.popup__image'),
   localInput: document.querySelector('.popup__local'),
   urlInput: document.querySelector('.popup__url'),
   localError: document.getElementById('local-error'),
@@ -55,11 +55,11 @@ function isProfileFormValid() {
   if (nameValue.length < 2 || nameValue.length > 40) {
     isNameValid = false;
     displayErrorMessage(profileForm.nameInput, profileForm.nameError, 'O nome deve ter entre 2 e 40 caracteres.');
-    saveButton.style.backgroundImage = 'url("../images/submit-invalid.jpg")';
+    saveButton.style.backgroundImage = 'url("./images/submit-invalid.jpg")';
 
   } else {
     clearErrorMessage(profileForm.nameInput, profileForm.nameError);
-    saveButton.style.backgroundImage = 'url("../images/submit-button.jpg")';
+    saveButton.style.backgroundImage = 'url("./images/submit-button.jpg")';
   }
 
   if (professionValue.length < 2 || professionValue.length > 200) {
@@ -73,8 +73,10 @@ function isProfileFormValid() {
 
   if (isFormValid) {
     profileForm.saveButton.removeAttribute('disabled');
+    saveButton.style.backgroundImage = 'url("./images/submit-button.jpg")';
   } else {
     profileForm.saveButton.setAttribute('disabled', 'true');
+    saveButton.style.backgroundImage = 'url("./images/submit-invalid.jpg")';
   }
 
   return isFormValid;
@@ -109,10 +111,10 @@ function isImageFormValid() {
   const isFormValid = isLocalValid && isUrlValid && localValue.length > 0 && urlValue.length > 0;
 
   if (isFormValid) {
-    imageSaveButton.style.backgroundImage = 'url("../images/submit-button.jpg")';
+    imageSaveButton.style.backgroundImage = 'url("./images/submit-button.jpg")';
     imageForm.saveButton.removeAttribute('disabled');
   } else {
-    imageSaveButton.style.backgroundImage = 'url("../images/submit-invalid.jpg")';
+    imageSaveButton.style.backgroundImage = 'url("./images/submit-invalid.jpg")';
     imageForm.saveButton.setAttribute('disabled', 'true');
   }
 
