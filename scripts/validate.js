@@ -34,7 +34,7 @@ const imageForm = {
 function displayErrorMessage(inputElement, errorElement, errorMessage) {
   inputElement.classList.add('popup__text-error');
   errorElement.textContent = errorMessage;
-  errorElement.classList.add('popup__error-line'); 
+  errorElement.classList.add('popup__error-line');
 }
 
 // Function to clear an error message for form inputs
@@ -56,7 +56,7 @@ function isProfileFormValid() {
     isNameValid = false;
     displayErrorMessage(profileForm.nameInput, profileForm.nameError, 'O nome deve ter entre 2 e 40 caracteres.');
     saveButton.style.backgroundImage = 'url("../assets/images/submit-invalid.jpg")';
-    
+
   } else {
     clearErrorMessage(profileForm.nameInput, profileForm.nameError);
     saveButton.style.backgroundImage = 'url("../assets/images/submit-button.jpg")';
@@ -103,7 +103,7 @@ function isImageFormValid() {
     displayErrorMessage(imageForm.urlInput, imageForm.urlError, 'Insira uma URL válida.');
   } else {
     clearErrorMessage(imageForm.urlInput, imageForm.urlError);
-    
+
   }
 
   const isFormValid = isLocalValid && isUrlValid && localValue.length > 0 && urlValue.length > 0;
