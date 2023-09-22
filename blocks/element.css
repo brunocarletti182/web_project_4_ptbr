@@ -81,12 +81,10 @@
 @media screen and (max-width: 917px) {
 
   .element__item {
-    width: 100%;
     max-height: 461px;
   }
 
   .element__image {
-    width: 100%;
     max-height: 382px;
   }
 
@@ -107,6 +105,13 @@
 @media screen and (max-width: 618px) {
   .element__item {
     height: 461px;
+  }
+
+}
+
+@media screen and (max-width: 418px) {
+  .element__item {
+    height: 320px;
   }
 
 }
