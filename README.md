@@ -14,12 +14,14 @@ CSS: Há um arquivo CSS externo que contém estilos para estilizar os elementos 
 Imagens: O projeto faz uso de várias imagens que são exibidas na seção de elementos, no perfil de usuário e no cabeçalho.
 JavaScript: Há um arquivo JavaScript externo que contém funcionalidades interativas, como abrir e fechar um popup de edição do perfil.
 
-**Imagens do projeto**
-
-![Imagem de amostra do projeto](./assets/images/desktop-phone-sample.jpg)
-
 **Github Page**
 
 Clique no link abaixo para visitar a página.
 
 https://brunocarletti182.github.io/web_project_4_ptbr/
+
+**Imagens do projeto**
+
+![Imagem de amostra do projeto](./images/desktop-phone-sample.jpg)
+
+
